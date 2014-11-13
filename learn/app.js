@@ -15,7 +15,7 @@ app.locals.moment = require('moment')
 //var employeeProvider= new EmployeeProvider('localhost');
 app.listen(port)
 console.log('started on port' + port)
-
+// 我是在测试 我是在测试
 //index page
 app.get('/',function(req,res) {
 	mysql.query("SELECT * FROM movie Limit 10", function(err, movie) {
@@ -61,8 +61,8 @@ app.get('/movie/:id',function(req,res){
 		title:'详情页',
 		//console.log(movie),
 		movie: {
-			doctor:'夏木哦',
-			title:'没完没了',
+			doctor:'夏木',
+			title:'大谋杀',
 			country:'中国',
 			summary:'翻拍自78年的同名小说 大谋杀',
 			flash:'http://player.youku.com/player.php/sid/XODIzODkwMDI4/v.swf',
